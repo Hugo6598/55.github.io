@@ -1,0 +1,76 @@
+h1 {
+  text-align: center;
+  color: blue;
+  border: 4px solid black;
+  padding: 8px;
+  border-radius: 100px;
+  margin-left: 250px;
+}
+
+h2 {
+  text-align: left;
+  padding-left: 300px;
+  text-decoration: underline;
+  color: blue;
+}
+
+h2::before {
+  content: "•  ";
+  position: relative; /* Il faut définir une position relative ici */
+  left: 0;
+  color: blue;
+  font-size: 20px; /* Corrigé ici */
+}
+
+.sous-titre{
+  color: black;
+   font-size: 1.2em;
+    font-weight: bold; 
+    margin-left:350px;
+  text-decoration:underline red;
+  }
+.sous-titre::before {
+  content: "⚜  ";
+  position: relative;
+  left: 0;
+  color: #d3de2e;
+  font-size: 20px;
+}
+
+.para {
+text-align: left;
+  padding-left: 350px;
+  text-align: justify;
+  border: 2px solid black; 
+   padding:35px;
+  border-radius: 300px;
+  margin-left: 250px;
+  background: #bcc1cf;
+}
+
+#menu {
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #f0f0f0;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+#menu h3 {
+  color: blue;
+}
+
+#menu a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#menu a:hover {
+  background-color: #ddd;
+}
